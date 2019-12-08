@@ -1,0 +1,49 @@
+﻿@using web_project.ViewModel;
+@model PlacesListViewModel
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Categories</title>
+    <link href="~/css/categories.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--- Meet the team -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">@Model.placeCategory</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!--- Cards -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            @{
+                foreach (var place in Model.allPlaces)
+                {
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="@place.img">
+                            <div class="card-body">
+                                <h4 class="card-title">@place.name</h4>
+                                <p class="card-text">@place.shortDescription</p>
+                                <a href="#" class="btn btn-outline-secondary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>
+
