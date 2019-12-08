@@ -66,7 +66,7 @@ using web_project.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(106, 103, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb6582b1f7894d01b89c6cf8857205e2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c8d5c2641564297b40ff48f9671a97e", async() => {
                 BeginContext(112, 90, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>UserList</title>\r\n");
                 EndContext();
@@ -86,7 +86,7 @@ using web_project.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(211, 390, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "412f17d551204516afb4e77667a79fba", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "947e00cd84e1434da24e3a4eb97fc54d", async() => {
                 BeginContext(217, 64, true);
                 WriteLiteral("\r\n    <h2>Список пользователей</h2>\r\n    <table class=\"table\">\r\n");
                 EndContext();
@@ -110,7 +110,7 @@ using web_project.Models;
                 WriteLiteral("</td>\r\n                <td>\r\n                    ");
                 EndContext();
                 BeginContext(428, 97, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5d00790f91b4408b2e9ecad0fd111b4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b1c87e083ae4a0f9ff7eaefd12ec625", async() => {
                     BeginContext(508, 13, true);
                     WriteLiteral("Права доступа");
                     EndContext();

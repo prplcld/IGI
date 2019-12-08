@@ -1,4 +1,4 @@
-﻿@model IEnumerable<web_project.Models.Place>
+﻿@model IEnumerable<web_project.Models.Category>
 @{
     Layout = "_Layout";
 }
@@ -27,15 +27,15 @@
     <div class="container-fluid padding">
         <div class="row padding">
             @{
-                foreach (web_project.Models.Place place in Model)
+                foreach (web_project.Models.Category category in Model)
                 {
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" src="@place.img">
+                            <img class="card-img-top" src="">
                             <div class="card-body">
-                                <h4 class="card-title">@place.name</h4>
-                                <p class="card-text">@place.shortDescription</p>
-                                <a href="~/places/item/@place.id" class="btn btn-outline-secondary">Read More</a>
+                                <h4 class="card-title">@category.categoryName</h4>
+                                <p class="card-text">@category.id</p>
+                                <a href="~/places/list/@category.id" class="btn btn-outline-secondary">Show Places</a>
                             </div>
                         </div>
                     </div>
@@ -45,4 +45,3 @@
     </div>
 </body>
 </html>
-

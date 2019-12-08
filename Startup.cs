@@ -11,7 +11,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using web_project.Interfaces;
 using web_project.Models;
 using web_project.Services;
 
@@ -44,8 +43,8 @@ namespace web_project
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configString.GetConnectionString("DefaultConnection")));
             services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 
-            services.AddTransient<IAllPlaces, PlacesRepository>();
-            services.AddTransient<IPlacesCategory, CategoryRepository>();
+            //services.AddTransient<IAllPlaces, PlacesRepository>();
+            //services.AddTransient<IPlacesCategory, CategoryRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -66,16 +65,6 @@ namespace web_project
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseAuthentication();
-
-
-            using (var scope = app.ApplicationServices.CreateScope())
-            {
-                AppDbContext content;
-                content = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-                    DbObjectsInitializer.Init(content);
-            }
-
-            
 
             app.UseMvc(routes =>
             {

@@ -42,3 +42,7 @@ E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Roles
 E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Roles\Create.g.cshtml.cs
 E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Roles\UserList.g.cshtml.cs
 E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Roles\Edit.g.cshtml.cs
+E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Places\Create.g.cshtml.cs
+E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Places\Edit.g.cshtml.cs
+E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Places\Categories.g.cshtml.cs
+E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Places\Item.g.cshtml.cs

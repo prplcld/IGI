@@ -67,12 +67,12 @@ using web_project.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(59, 111, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c7f0ad706bf490ab3e4cc65185c10b5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d30982c0400542c2a9027440b4c7aca1", async() => {
                 BeginContext(65, 34, true);
                 WriteLiteral("\r\n    <title>Login</title>\r\n\r\n    ");
                 EndContext();
                 BeginContext(99, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d07a23bb16ae49359bdbd14c59b7277f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0f8be37f5ef349368c2a0b88290978a7", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -107,7 +107,7 @@ using web_project.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(172, 853, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "486aed88af90487a938d0ee681a08249", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a792a7395ef41aea8cfc3789a88e815", async() => {
                 BeginContext(178, 268, true);
                 WriteLiteral(@"
     <div class=""modal-dialog text-center"">
@@ -120,7 +120,7 @@ using web_project.Models;
                 ");
                 EndContext();
                 BeginContext(446, 492, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0975aaa656594834a11668d5060ce500", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3bf5a1cb1c8543488f6dd88cb7e78d58", async() => {
                     BeginContext(467, 464, true);
                     WriteLiteral(@"
                     <div class=""form-group"">
