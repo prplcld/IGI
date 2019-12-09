@@ -74,7 +74,7 @@ using web_project.Models;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n    ");
             EndContext();
             BeginContext(139, 112, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9088977d91e548ff9f1d3e288b2bb597", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "96ed9c53d65c4bd5a0700a672369157b", async() => {
                 BeginContext(145, 99, true);
                 WriteLiteral("\r\n        <meta name=\"viewport\" content=\"width=device-width\" />\r\n        <title>Index</title>\r\n    ");
                 EndContext();
@@ -94,7 +94,7 @@ using web_project.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(257, 648, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b4def0c06e1494097a6a8f3b6d6f2ed", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f84c22109a39477584d4f548fda90f46", async() => {
                 BeginContext(263, 64, true);
                 WriteLiteral("\r\n        <h2>Список ролей</h2>\r\n        <table class=\"table\">\r\n");
                 EndContext();
@@ -118,7 +118,7 @@ using web_project.Models;
                 WriteLiteral("</td>\r\n                <td>\r\n                    ");
                 EndContext();
                 BeginContext(473, 243, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f3f2e9bf19848238d12c50a04a87bf3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "199a5f0689bb4f168a57d054d7618aea", async() => {
                     BeginContext(537, 172, true);
                     WriteLiteral("\r\n                        <button type=\"submit\" class=\"btn btn-sm btn-danger\">\r\n                            Удалить\r\n                        </button>\r\n                    ");
                     EndContext();
@@ -165,7 +165,7 @@ using web_project.Models;
                 WriteLiteral("        </table>\r\n        ");
                 EndContext();
                 BeginContext(793, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "15c69bd16f194798ae8a9bd8e4c5bb15", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e9cdf35899874968aa3f43c2fc4ecde3", async() => {
                     BeginContext(816, 13, true);
                     WriteLiteral("Добавить роль");
                     EndContext();
@@ -187,7 +187,7 @@ using web_project.Models;
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(843, 49, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a9e73b07b2e487f88a1f038ece79005", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "750353dd751a461f91fc10c39b4a197e", async() => {
                     BeginContext(868, 20, true);
                     WriteLiteral("Список пользователей");
                     EndContext();

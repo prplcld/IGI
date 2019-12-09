@@ -46,3 +46,4 @@ E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Place
 E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Places\Edit.g.cshtml.cs
 E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Places\Categories.g.cshtml.cs
 E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Places\Item.g.cshtml.cs
+E:\labs\c#\web\web_project\web_project\obj\Debug\netcoreapp2.1\Razor\Views\Places\Search.g.cshtml.cs

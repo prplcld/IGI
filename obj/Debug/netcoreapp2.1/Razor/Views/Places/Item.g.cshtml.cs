@@ -64,7 +64,7 @@ using web_project.Models;
             WriteLiteral("\r\n    <!DOCTYPE html>\r\n\r\n    <html>\r\n    ");
             EndContext();
             BeginContext(114, 111, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "862c5d1d79e24f70869353d63c840d79", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5fac7470567c4451ab489e92c006c386", async() => {
                 BeginContext(120, 98, true);
                 WriteLiteral("\r\n        <meta name=\"viewport\" content=\"width=device-width\" />\r\n        <title>Item</title>\r\n    ");
                 EndContext();
@@ -84,7 +84,7 @@ using web_project.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(231, 1162, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "72dcdc6fe3894922b99286688e92c650", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6a653c4b82540c79ccc0502b0bcd4c4", async() => {
                 BeginContext(237, 129, true);
                 WriteLiteral("\r\n        <div class=\"container\">\r\n\r\n            <!-- Portfolio Item Heading -->\r\n            <h1 class=\"my-4\">\r\n                ");
                 EndContext();

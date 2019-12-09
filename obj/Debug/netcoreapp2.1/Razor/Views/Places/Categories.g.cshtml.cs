@@ -64,12 +64,12 @@ using web_project.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(118, 205, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f8d400dad2b440e80459050a93354e4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "352faf5711a64ba0b1c8c4bb5f0446cd", async() => {
                 BeginContext(124, 139, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <title>Categories</title>\r\n    ");
                 EndContext();
                 BeginContext(263, 51, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c2c6eaf0fba1452d8882abd5af5f77db", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c8b6af5f66e54d62a0136a28050e2ffb", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -103,7 +103,7 @@ using web_project.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(325, 1135, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d025dc02b90b4e04b18f5b7c522ad975", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e4c30d385eac4c4cb56b3d7c9d1ed498", async() => {
                 BeginContext(331, 377, true);
                 WriteLiteral(@"
 
@@ -157,7 +157,7 @@ using web_project.Models;
                 WriteLiteral("</p>\r\n                                ");
                 EndContext();
                 BeginContext(1207, 86, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cad206f7946b4aff8588e84e57b0addb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5633ebf50b704a3790b1cf7add42aa63", async() => {
                     BeginContext(1278, 11, true);
                     WriteLiteral("Show Places");
                     EndContext();

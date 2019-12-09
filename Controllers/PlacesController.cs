@@ -75,7 +75,34 @@ namespace web_project.Controllers
             }
             return RedirectToAction("Index");
         }
+        
+        public IActionResult Search()
+        {
+            return View(appDbContext.Place.ToList());
+        }
 
+        public JsonResult GetSearchingData(string SearchBy, string SearchValue)
+        {
+            List<Place> places = new List<Place>();
+            if(SearchBy == "ID")
+            {
+                try
+                {
+                    int Id = Convert.ToInt32(SearchValue);
+                    places = appDbContext.Place.Where(p => p.id == Id || SearchValue == null).ToList();
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Not proper Value");
+                }
+            }
+            else
+            {
+                places = appDbContext.Place.Where(p => p.name.Contains(SearchValue) || SearchValue == null).ToList();
+               
+            }
+            return Json(places);
+        }
 
     }
 }
