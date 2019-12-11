@@ -3,27 +3,31 @@
     Layout = "_Layout";
 }
 
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
 <!DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Search</title>
-    
+    <title>@Localizer["Search"]</title>
+
 </head>
 <body>
     <div class="container">
-        <b>Search by:</b>
+        <b>@Localizer["Search"]</b>
         <select id="SearchBy">
             <option value="ID">ID</option>
-            <option value="Name">Name</option>
+            <option value="Name">@Localizer["Name"]</option>
         </select> <br />
-        @Html.TextBox("Search")<input type="submit" id="SearchBtn" value="Search" />
+        @Html.TextBox("Search")<input type="submit" id="SearchBtn" value="@Localizer["Searchlabel"]" />
         <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
+                    <th>@Localizer["Name"]</th>
                 </tr>
             </thead>
             <tbody id="DataSearching">
@@ -63,7 +67,7 @@
                             });
                         }
                     }
-                }); 
+                });
             });
         });
     </script>

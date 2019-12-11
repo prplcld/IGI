@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -7,12 +8,18 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using web_project.Models;
 using web_project.Services;
+
+
 
 namespace web_project
 {
@@ -39,13 +46,32 @@ namespace web_project
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var supportedCultures = new[]
+                {
+                    new CultureInfo("en"),
+                    new CultureInfo("de"),
+                    new CultureInfo("ru")
+                };
+
+                options.DefaultRequestCulture = new RequestCulture("ru");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
+
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configString.GetConnectionString("DefaultConnection")));
             services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 
-            //services.AddTransient<IAllPlaces, PlacesRepository>();
-            //services.AddTransient<IPlacesCategory, CategoryRepository>();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddSignalR();
+            services.AddRouting();
+
+            services.Configure<SecurityStampValidatorOptions>(options => { options.ValidationInterval = TimeSpan.Zero; });
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddDataAnnotationsLocalization().AddViewLocalization();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,6 +92,10 @@ namespace web_project
             app.UseCookiePolicy();
             app.UseAuthentication();
 
+            var locOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
+            app.UseRequestLocalization(locOptions.Value);
+
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -73,8 +103,43 @@ namespace web_project
                     template: "{controller=Places}/{action=Index}");
                 routes.MapRoute(
                     name: "list",
-                    template: "{controller=Places}/{action=List}/{id?}"
+                    template: "{controller}/{action}/{id?}",
+                    constraints: new {id = new IntRouteConstraint()},
+                    defaults: new {controller = "Places", action = "Index"}
                     );
+                routes.MapRoute(
+                    name: "create_item",
+                    template: "{controller=Places}/{action=Create}");
+                routes.MapRoute(
+                    name: "search",
+                    template: "{controller=Places}/{action=Search}");
+                routes.MapRoute(
+                    name: "categories",
+                    template: "{controller=Places}/{action=Categories}");
+                routes.MapRoute(
+                    name: "places_create",
+                    template: "{controller=Places}/{action=Create}");
+                routes.MapRoute(
+                    name: "roles_index",
+                    template: "{controller=Roles}/{action=Index}");
+                routes.MapRoute(
+                    name: "roles_create",
+                    template: "{controller=Roles}/{action=Create}");
+                routes.MapRoute(
+                    name: "roles_edit",
+                    template: "{controller=Roles}/{action=Edit}");
+                routes.MapRoute(
+                    name: "create_user",
+                    template: "{controller=User}/{action=Create}");
+                routes.MapRoute(
+                    name: "user_index",
+                    template: "{controller=User}/{action=Index}");
+
+            });
+
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<ChatHub>("/Chat");
             });
         }
     }

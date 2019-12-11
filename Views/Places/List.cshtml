@@ -3,12 +3,16 @@
     Layout = "_Layout";
 }
 
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Categories</title>
+    <title>Countries</title>
     <link href="~/css/categories.css" rel="stylesheet">
 </head>
 <body>
@@ -17,7 +21,7 @@
     <div class="container-fluid padding">
         <div class="row welcome text-center">
             <div class="col-12">
-                <h1 class="display-4">category</h1>
+                <h1 class="display-4">@Localizer["Countries"]</h1>
             </div>
             <hr>
         </div>
@@ -35,7 +39,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">@place.name</h4>
                                 <p class="card-text">@place.shortDescription</p>
-                                <a href="~/places/item/@place.id" class="btn btn-outline-secondary">Read More</a>
+                                <a href="~/places/item/@place.id" class="btn btn-outline-secondary">@Localizer["More"]</a>
                             </div>
                         </div>
                     </div>

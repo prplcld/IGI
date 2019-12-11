@@ -102,6 +102,7 @@ namespace web_project.Controllers
 
                 await _userManager.RemoveFromRolesAsync(user, removedRoles);
 
+                await _userManager.UpdateSecurityStampAsync(user);
                 return RedirectToAction("UserList");
             }
 

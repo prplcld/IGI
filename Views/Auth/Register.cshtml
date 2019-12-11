@@ -4,6 +4,10 @@
     Layout = "_Layout";
 }
 
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
 <!DOCTYPE html>
 
 <html>
@@ -36,7 +40,7 @@
             <span asp-validation-for="PasswordConfirm"></span>
         </div>
         <div>
-            <input type="submit" value="Регистрация" />
+            <input type="submit" value="@Localizer["Register"]" />
         </div>
     </form>
 </body>
